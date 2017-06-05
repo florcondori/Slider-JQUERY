@@ -1,3 +1,10 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+}
+
 #slider{
 	height: 500px;
 	width: 700px;
@@ -8,10 +15,19 @@
 	align-items: center;
 }
 
-.slider-img{
+#slider > div:first-child{
 	position: relative;
-	height: 300px;
-	width: 500px;
+	height: 350px;
+	width: 600px;
+}
+
+.slider-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 2rem;
 }
 
 .slider-img > div{
@@ -27,10 +43,6 @@ img{
 	height: 100%;
 }
 
-.controles{
-	position
-}
-
 .controles a{
 	background-color: #ccc;
 	border-radius: 50%;
@@ -41,4 +53,20 @@ img{
 
 .controles a.active {
     background: #3c3c3c;
+}
+
+.btns-cambio{
+	position: absolute;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.btns-cambio a{
+	background-color: transparent;
+	color: black;
+	font-size: 2rem;
+	font-weight:800;
 }
