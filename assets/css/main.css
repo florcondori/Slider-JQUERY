@@ -1,6 +1,7 @@
 #slider{
 	height: 500px;
 	width: 700px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
